@@ -1,7 +1,3 @@
-print ("sziamia")
-<<<<<<< HEAD
-print("alma")
-=======
+menu=["Palacsinta", "Rantotthús"]
 
-print("ZIAAAAAAAAAAAAAAAAAAAAAAAD")
->>>>>>> a245eb73cb67aed84e34999c39ad234d55817f85
+print (f"{menu[0]}")
