@@ -17,7 +17,8 @@ def simbolprint(linelength:int=10, symbol:str=" ", border:bool=False):
 # should there be a border?
 
 def itemprint(linelength:int=10, symbol:str=" ", itemName:str="", itemPrice:int=0, border:bool=False):
+    itemPriceText = f"{itemPrice}"
     if(border == False):
-        print(f"{itemName}{(symbol)*(linelength-(len(itemName)+len({itemPrice})+2))}{itemPrice}Ft")
+        print(f"{itemName}{(symbol)*(linelength-(len(itemName)+len(itemPriceText)+2))}{itemPrice}Ft")
     else:
-        print(f"|{itemName}{(symbol)*(linelength-(len(itemName)+len({itemPrice})+4))}{itemPrice}Ft|")
+        print(f"|{itemName}{(symbol)*(linelength-(len(itemName)+len(itemPriceText)+4))}{itemPrice}Ft|")
