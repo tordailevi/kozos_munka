@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-menu=["Palacsinta", "Rantotthús"]
 
-print (f"{menu[0]}")
-=======
-print ("sziamia")
+menuItems:list=["Palacsinta", "Pörkölt", "Rántotthús", "Húsleves", "Bableves", "Frankfurti leves"]
+orderedItems:list=[]
+menuItemPrices:list=[800, 2500, 3000, 1500, 1300, 1900]
+printMenu(menuItems)
 
-
-print("This is Felix!")
+getorder(orderedItems, menuItemPrices)
 
 
-print("alma")
 
 
-print("ZIAAAAAAAAAAAAAAAAAAAAAAAD")
->>>>>>> f5ac171271ddb300fcb5b4ae33fbab2cb797ce8f
