@@ -9,10 +9,6 @@ menuItemPrices:list=[800, 2500, 3000, 1500, 1300, 1900]
 
 
 
-
-
-
-
 fprint_lib.simbolprint(30, "*")
 fprint_lib.itemprint(30, "_", f"{menuItems[0]}", 800)
 fprint_lib.simbolprint(30, "=")
@@ -26,3 +22,4 @@ fprint_lib.itemprint(26, "_", f"{menuItems[4]}", 1300)
 fprint_lib.simbolprint(30, "=")
 fprint_lib.itemprint(26, "_", f"{menuItems[5]}", 1900)
 fprint_lib.simbolprint(30, "*")
+
