@@ -1,1 +1,2 @@
 print ("sziamia")
+print("alma")
