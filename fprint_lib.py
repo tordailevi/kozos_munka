@@ -2,7 +2,7 @@
 # what simbol should be printed in the line
 # should there be a border?
 
-def simbolprint(linelength:int=10, symbol:str=" ", border:bool=False):
+def simbolprint(linelength:int=30, symbol:str=" ", border:bool=False):
     if(border == False):
         print(symbol*linelength)
     else:
@@ -16,7 +16,7 @@ def simbolprint(linelength:int=10, symbol:str=" ", border:bool=False):
 # price of the item
 # should there be a border?
 
-def itemprint(linelength:int=10, symbol:str=" ", itemName:str="", itemPrice:int=0, border:bool=True):
+def itemprint(linelength:int=30, symbol:str=" ", itemName:str="", itemPrice:int=0, border:bool=False):
     itemPriceText = f"{itemPrice}"
     if(border == False):
         print(f"{itemName}{(symbol)*(linelength-(len(itemName)+len(itemPriceText)+2))}{itemPrice}Ft")
