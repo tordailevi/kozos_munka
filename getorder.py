@@ -1,4 +1,4 @@
-def get_order(orderedItems:list, menuItems:list):
+def get_order(orderedItems:list):
     a:int=1
     while a !=0:
         c:int=0
