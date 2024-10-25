@@ -4,9 +4,14 @@ def receipt_print(linelength:int=30, menuItems:list=[], menuItemPrices:list=[], 
     
     szum:int = 0
     i:int = 0
-
+    
+    print("")
     simbolprint(linelength,"*")
-    print(f"*{" "*linelength/2-4}NYUGTA{" "*linelength/2-4}*")
+    print("*", end="")
+    print(" " * (linelength//2-4), end="")
+    print("NYUGTA", end="")
+    print(" " * (linelength//2-4), end="")
+    print("*")
     simbolprint(linelength,"*")
     
     while(i<len(orderedItems)):
@@ -24,5 +29,9 @@ def receipt_print(linelength:int=30, menuItems:list=[], menuItemPrices:list=[], 
     itemprint(linelength, " ", "Fizetendő:", szum+szum*0.1)
 
     simbolprint(linelength,"*")
-    print(f"*{" "*linelength/2-4}NYUGTA{" "*linelength/2-4}*")
+    print("*", end="")
+    print(" " * (linelength//2-4), end="")
+    print("NYUGTA", end="")
+    print(" " * (linelength//2-4), end="")
+    print("*")
     simbolprint(linelength,"*")
