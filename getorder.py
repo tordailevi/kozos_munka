@@ -14,8 +14,6 @@ def get_order(orderedItems:list, menuItems:list):
         except ValueError:
             print("Hiba, kérem számadatot adjon meg adjon meg!")
     return(orderedItems)
-orderedItems:list=[]
-menuItems:list=["Palacsinta", "Pörkölt", "Rántotthús", "Húsleves", "Bableves", "Frankfurti leves"]
-print(f"{get_order(orderedItems,menuItems)}")
+
             
         
