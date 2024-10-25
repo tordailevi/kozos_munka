@@ -1,4 +1,4 @@
-from fprint_lib import simbolprint,itemprint
+from fprint_lib import simbolprint,itemprint,header_print
 
 def receipt_print(linelength:int=30, menuItems:list=[], menuItemPrices:list=[], orderedItems:list=[]):
     
@@ -6,13 +6,7 @@ def receipt_print(linelength:int=30, menuItems:list=[], menuItemPrices:list=[], 
     i:int = 0
     
     print("")
-    simbolprint(linelength,"*")
-    print("*", end="")
-    print(" " * (linelength//2-4), end="")
-    print("NYUGTA", end="")
-    print(" " * (linelength//2-4), end="")
-    print("*")
-    simbolprint(linelength,"*")
+    header_print(linelength, "NYUGTA")
     
     while(i<len(orderedItems)):
         itemprint(linelength, " ", menuItems[orderedItems[i]], menuItemPrices[orderedItems[i]])
@@ -28,10 +22,4 @@ def receipt_print(linelength:int=30, menuItems:list=[], menuItemPrices:list=[], 
 
     itemprint(linelength, " ", "Fizetendő:", szum+szum*0.1)
 
-    simbolprint(linelength,"*")
-    print("*", end="")
-    print(" " * (linelength//2-4), end="")
-    print("NYUGTA", end="")
-    print(" " * (linelength//2-4), end="")
-    print("*")
-    simbolprint(linelength,"*")
+    header_print(linelength, "NYUGTA")
